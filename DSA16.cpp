@@ -44,24 +44,64 @@
 // cout<<linearSearch(vec);
 // return 0;
 // }
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+// int reverse(vector<int>& vec,int size){
+//     for (int start = 0, end = size-1 ; start<size, end > 0; start++,end--)
+//     {
+//         swap(vec[start],vec[end]);
+//     }
+//     for (int i = 0; i < size; i++)
+//     {
+//         cout<<vec[i];
+//     }   
+// }
+// int main(){
+// std :: vector<int>vec = {1,2,3,4,5};
+// int size = 5;
+// cout<<reverse(vec);
+// return 0;
+// }
+// maximum subarray  
+// #include <iostream>
+// using namespace std;
+// int main(){
+// int arr[5]= {1,2,3,4,5};
+// int n = 5;
+// for (int start = 0; start < n; start++)
+// {
+//     for (int end= start; end < n; end++)
+//     {
+//         for (int i = start; i<=end; i++)
+//         {
+//             cout<<arr[i];
+//         }
+//         cout<<" ";
+//     }
+//     cout<<endl;
+    
+// }
+
+// return 0;
+// }
+
+// maximum subarray sum
+
 #include <iostream>
-#include <vector>
 using namespace std;
-int reverse(vector<int>& vec,int size){
-    for (int start = 0, end = size-1 ; start<size, end > 0; start++,end--)
-    {
-        swap(vec[start],vec[end]);
-    }
-    for (int i = 0; i < size; i++)
-    {
-        cout<<vec[i];
-    }
-    
-    
-}
 int main(){
-std :: vector<int>vec = {1,2,3,4,5};
-int size = 5;
-cout<<reverse(vec);
+int arr[5]= {1,2,3,4,5};
+int n = 5;
+int maxSum = INT8_MIN;
+for (int start = 0; start < n; start++)
+{   int currSum = 0;
+    for (int end= start; end < n; end++)
+    {
+        currSum+=arr[end];
+        maxSum = max(currSum,maxSum);
+    }
+}
+    cout<<"max sumarry sum = "<<maxSum<<endl;
 return 0;
 }
