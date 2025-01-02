@@ -1,3 +1,4 @@
+//brute force approach
 class Solution {
 public:
     int maxArea(vector<int>& height) {
@@ -11,6 +12,24 @@ public:
                 maxWater = max(maxWater, area); 
             }
         }
+        return maxWater;
+    }
+};
+//optimal approach
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+        int lP=0;
+        int n =height.size();
+        int rP=n-1;
+        int maxWater = 0;
+        while(lP<rP){
+            int width = rP-lP;
+            int length = min(height[lP],height[rP]);
+            int area = width*length;
+            maxWater = max(maxWater,area);
+            height[lP]<height[rP]?lP++:rP--;
+        } 
         return maxWater;
     }
 };
