@@ -45,27 +45,48 @@
 // cout<<maxProfit;
 // return 0;
 // }
+// #include <iostream>
+// using namespace std;
+// int main(){
+// int n = -3;
+// long binForm = n;
+// double ans = 1, x = 3;
+// if (binForm<0)
+// {
+//     x = 1/x;
+//     binForm = -binForm;
+    
+// }
+
+// while(binForm>0){
+//     if (binForm %2==1)
+//     {
+//         ans*=x;
+//     }
+//     x*=x;
+//     binForm/=2;
+// }
+// cout<<ans;
+// return 0;
+// }
 #include <iostream>
+#include <vector>
 using namespace std;
 int main(){
-int n = -3;
-long binForm = n;
-double ans = 1, x = 3;
-if (binForm<0)
+vector <int> nums = {1,2,3,4};
+vector <int> answer; 
+int n = nums.size();
+int prod = 1;
+for (int i = 0; i < n; i++)
 {
-    x = 1/x;
-    binForm = -binForm;
+    prod*=nums[i];
+    for (int i = 0; i < n; i++)
+    {
+        prod/=nums[i];
+        answer.push_back(i);
+    }
     
 }
-
-while(binForm>0){
-    if (binForm %2==1)
-    {
-        ans*=x;
-    }
-    x*=x;
-    binForm/=2;
-}
-cout<<ans;
+cout<<;
 return 0;
 }
