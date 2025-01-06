@@ -24,7 +24,7 @@
 // int target = 5;
 // cout<<binarySearch(arr,target);
 // return 0;
-// }
+// } // Big of O n computation time 
 
 
 //binarySearch using recursion 
@@ -53,4 +53,4 @@ vector <int> arr{0,1,2,3,4,5};
 int target = 4,st = 0,end = arr.size()-1;
 cout<<binarySearch(arr,target,st,end);
 return 0;
-} 
+} //big of O log n computation time
