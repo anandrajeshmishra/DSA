@@ -130,18 +130,18 @@
 // cout<<"lower bound "<<*(s.upper_bound(4))<<endl;
 // return 0;
 // }
-#include <iostream>
-#include <algorithm>
-#include <vector>
-using namespace std;
-bool comparator(pair<int,int>p1,pair<int,int>p2){
-    if (p1.second<p2.second) return true;
-    if(p1.second>p2.second)  return false;
-    if(p1.first<p2.first) return true;
-    else return false;
+// #include <iostream>
+// #include <algorithm>
+// #include <vector>
+// using namespace std;
+// bool comparator(pair<int,int>p1,pair<int,int>p2){
+//     if (p1.second<p2.second) return true;
+//     if(p1.second>p2.second)  return false;
+//     if(p1.first<p2.first) return true;
+//     else return false;
     
-}
-int main(){
+// }
+// int main(){
 // int arr[5]={1,2,3,4,5};
 // sort(arr,arr+5,greater<int>());
 // for (int val :arr)
@@ -154,12 +154,44 @@ int main(){
 // {
 //     cout<<p.first<<" "<<p.second<<endl;
 // }
-vector <int> vec2 = {1,2,3,4,5};
-reverse(vec2.begin(),vec2.end());
-for (int val : vec2)
-{
-    cout<<val<<" ";
-}
-
+// vector <int> vec2 = {1,2,3,4,5};
+// reverse(vec2.begin(),vec2.end());
+// reverse(vec2.begin(),vec2.begin()+3);
+// for (int val : vec2)
+// {
+//     cout<<val<<" ";
+// }
+// cout <<* (max_element(vec2.begin(),vec2.end()))<<" ";
+// cout <<* (min_element(vec2.begin(),vec2.end()))<<" ";
+// cout <<(binary_search(vec2.begin(),vec2.end(),3))<<" ";
+// int a =4,b=5;
+// swap(a,b);
+// cout<<a<<" "<<b;
+// return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// int main(){
+// char str[100];
+// cout<<"enter char array"<<endl;
+// cin.getline(str,100,'$');
+// cout<<str;
+// return 0;
+// }
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+// char str[] = "AnandkumarMishra";
+// int len = 0;
+// for (int i = 0; str[i] !='\0'; i++)
+// {
+//     len++;
+// }
+// cout<<len;
+string str = "anandkumarmishra";
+string str1 = "mishraanandkumar";
+string str3 = str+str1;
+cout<<str3;
 return 0;
 }
