@@ -1,2 +1,2 @@
-bubbleSort(arr,n);
-printArry(arr,n);
+cout<<vec.front();
+// cout<<vec.back();
