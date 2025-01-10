@@ -4,6 +4,8 @@
 #include <deque>
 #include <stack>
 #include <queue>
+#include <map>
+#include <set>
 using namespace std;
 int main(){
 // vector <int> vec2={1,2,3,4,5,6};
@@ -76,15 +78,55 @@ int main(){
 // }
 // cout<<endl;
 // cout<<s.empty();
-queue <int> q;
-q.push(1);
-q.push(2);
-q.push(3);
-while (!q.empty())
+// queue <int> q;
+// q.push(1);
+// q.push(2);
+// q.push(3);
+// while (!q.empty())
+// {
+//     cout<<q.front();
+//     q.pop();
+// }
+// priority_queue<int , vector<int>, greater<int>> q;
+// q.push(5);
+// q.push(3);
+// q.push(10);
+// q.push(4);
+// while (!q.empty())
+// {
+//     cout<<q.top()<<" ";
+//     q.pop();
+// }
+// map <string,int> m;
+// m["tv"] = 100;
+// m["laptop"] = 50;
+// m["headphone"] = 25;
+// m.erase("tv");
+// for (auto p : m)
+// {
+//     cout<<p.first<<" "<<p.second<<endl;
+// }
+// if (m.find("tv") !=m.end())
+// {
+//     cout<<"found"<<endl;
+// }else{
+//     cout<<"not found"<<endl;
+// }
+set <int> s;
+s.insert(1);
+s.insert(2);
+s.insert(3);
+s.insert(4);
+s.insert(5);
+s.insert(1);
+s.insert(1);
+for (int val : s)
 {
-    cout<<q.front();
-    q.pop();
+    cout<<val<<" "<<endl;
 }
-cout<<endl;
+
+cout<<s.size()<<endl;
+cout<<"lower bound "<<*(s.lower_bound(4))<<endl;
+cout<<"lower bound "<<*(s.upper_bound(4))<<endl;
 return 0;
 }
