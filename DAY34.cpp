@@ -30,13 +30,37 @@ int main(){
 //             cout<<"The value of a is 0"<<endl;
 //         }
 // }
-int n;
-cout<<"Enter the value of n ";
+// int n;
+// cout<<"Enter the value of n ";
+// cin>>n;
+// int i = 1;
+// while(i<=n){
+//     cout<<i<<"\t";
+//     i++;
+// }
+//     return 0;
+// int n;
+// cout<<"Enter the value of n ";
+// cin>>n;
+// int i = 1;
+// int sum = 0;
+// while(i<=n){
+//     sum = sum+i;
+//     i++;
+// }
+// cout<<sum;
+// return 0;
+int n = 0;
 cin>>n;
 int i = 1;
 while(i<=n){
-    cout<<i<<"\t";
+    int j = 1;
+    while(j<=n){
+        cout<<i;
+        j++;
+    }
+    cout<<endl;
     i++;
 }
-    return 0;
+return 0;
 }
