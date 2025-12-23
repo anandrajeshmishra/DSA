@@ -233,6 +233,91 @@ int main(){
 //     cout<<endl;
 //     row++;
 // }
-
+// AAAA
+// BBBB
+// CCCC
+// DDDD
+// int n;
+// cin>>n;
+// int row = 1;
+// while(row<=n){
+//     int col = 1;
+//     while(col<=n){
+//         char ch = 'A'+row-1;
+//         cout<<ch;
+//         col++;
+//     }
+//     cout<<endl;
+//     row++;
+// }
+// ABCD
+// ABCD
+// ABCD
+// ABCD
+// int n;
+// cin>>n;
+// int row = 1;
+// while(row<=n){
+//     int col = 1;
+//     while(col<=n){
+//         char ch = 'A'+col-1;
+//         cout<<ch;
+//         col++;
+//     }
+//     cout<<endl;
+//     row++;
+// }
+// ABCD
+// EFGH
+// IJKL
+// MNOP
+// int n;
+// cin>>n;
+// char count = 'A';
+// int row = 1;
+// while(row<=n){
+//     int col = 1;
+//     while(col<=n){
+//         cout<<count;
+//         count++;
+//         col++;
+//     }
+//     cout<<endl;
+//     row++;
+// }
+// ABCD
+// BCDE
+// CDEF
+// DEFG
+// int n;
+// cin>>n;
+// int row = 1;
+// while(row<=n){
+//     int col = 1;
+//     while(col<=n){
+//         char ch = 'A'+row+col-2;
+//         cout<<ch;
+//         col++;
+//     }
+//     cout<<endl;
+//     row++;
+// }
+// A
+// BB
+// CCC
+// DDDD
+int n;
+cin>>n;
+int row = 1;
+while(row<=n){
+    int col = 1;
+    while(col<=row){
+        char ch = 'A'+row-1;
+        cout<<ch;
+        col++;
+    }
+    cout<<endl;
+    row++;
+}
 return 0;
 }
