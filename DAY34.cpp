@@ -337,5 +337,88 @@ int main(){
 //     cout<<endl;
 //     row++;
 // }
+// A
+// BC
+// CDE
+// DEFG
+// int n;
+// cin>>n;
+// int row = 1;
+// while(row<=n){
+//     int col = 1;
+//     while(col<=row){
+//         char ch = ('A'+row+col-2);
+//         cout<<ch;
+//         col++;
+//     }
+//     cout<<endl;
+//     row++;
+// }
+// D
+// CD
+// BCD
+// ABCD
+// int n;
+// cin>>n;
+// int row = 1;
+// while(row<=n){
+//     int col = 1;
+//     char start = 'A'+n-row;
+//     while(col<=row){
+//         cout<<start;
+//         start++;
+//         col++;
+//     }
+//     cout<<endl;
+//     row++;
+// }
+//    *
+//   **
+//  ***
+// ****
+// int n;
+// cin>>n;
+// int row = 1;
+// while(row<=n){
+//     //for printing spaces
+//     int space = n-row;
+//     while(space){
+//         cout<<" ";
+//         space--;
+//     }
+//     //for printing stars
+//     int col = 1;
+//     while(col<=row){
+//         cout<<"*";
+//         col++;
+//     }
+//     cout<<endl;
+//     row++;
+// }
+// int n;
+// cin>>n;
+// int row = 1;
+// while(row<=n){
+//     // print space (1st triangle)
+//     int space = n-row;
+//     while(space){
+//         cout<<" ";
+//         space--;
+//     }
+//     // print 2nd triangle
+//     int col = 1;
+//     while(col<=row){
+//         cout<<col;
+//         col++;
+//     }
+//     // print 3rd triangle
+//     int start = row-1;
+//     while(start){
+//         cout<<start;
+//         start--;
+//     }
+//     cout<<endl;
+//     row++;
+// }
 return 0;
 }
