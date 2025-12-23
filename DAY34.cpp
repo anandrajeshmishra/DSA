@@ -169,19 +169,70 @@ int main(){
 // 2 3
 // 4 5 6
 // 7 8 9 10
-int n = 0;
-cin>>n;
-int count = 1;
-int row = 1;
-while(row<=n){
-    int col = 1;
-    while(col<=row){
-        cout<<count<<" ";
-        count++;
-        col++;
-    }
-    cout<<endl;
-    row++;
-}
+// int n;
+// cin>>n;
+// int count = 1;
+// int row = 1;
+// while(row<=n){
+//     int col = 1;
+//     while(col<=row){
+//         cout<<count<<" ";
+//         count++;
+//         col++;
+//     }
+//     cout<<endl;
+//     row++;
+// }
+// 1
+// 23
+// 345
+// 4567
+// int n;
+// cin>>n;
+// int row = 1;
+// while(row<=n){
+//     int value = row;
+//     int col = 1;
+//     while(col<=row){
+//         cout<<value;
+//         value++;
+//         col++;
+//     }
+//     cout<<endl;
+//     row++;
+// }
+// 1
+// 23
+// 345
+// 4567//without unsing the value vsariable like above
+// int n;
+// cin>>n;
+// int row = 1;
+// while(row<=n){
+//     int col = 1;
+//     while(col<=row){
+//         cout<<row+col-1;
+//         col++;
+//     }
+//     cout<<endl;
+//     row++;
+// }
+// 1
+// 21
+// 321
+// 4321
+// int n;
+// cin>>n;
+// int row = 1;
+// while(row<=n){
+//     int col = 1;
+//     while(col<=row){
+//         cout<<row-col+1;
+//         col++;
+//     }
+//     cout<<endl;
+//     row++;
+// }
+
 return 0;
 }
