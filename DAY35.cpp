@@ -44,5 +44,26 @@ int main(){
 // }else{
 //     cout<<"The given number is a prime number";
 // }
+// int n =4421;
+// int newNum = n;
+// int mul=1;
+// int sum=0;
+// while(newNum!=0){
+//     mul*=newNum%10;
+//     sum+=newNum%10;
+//     newNum=newNum/10;
+// }
+// cout<<mul<<" "<<sum;
+int x= -123;
+int temp = x;
+int reverse = 0;
+        while(x!=0){
+            int digit = (x%10);
+            reverse=(reverse+digit)*10;
+            x/=10;
+        }
+        
+           cout<<reverse;
+        
 return 0;
 }
