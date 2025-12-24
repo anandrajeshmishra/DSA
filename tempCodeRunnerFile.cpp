@@ -1,6 +1,10 @@
-vector <pair<int,int>> vec = {{3,1},{2,1},{7,1},{5,2}};
-// sort(vec.begin(),vec.end(),comparator);
-// for (auto p : vec)
-// {
-//     cout<<p.first<<" "<<p.second<<endl;
-// }
+int n;
+cin>>n;
+int temp = n;
+int binary = 0;
+while(temp!=0){
+    int digit = temp%2;
+    binary = (binary+digit)*10;
+    temp/=2;
+}
+cout<<binary;

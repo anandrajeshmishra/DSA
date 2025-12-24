@@ -54,16 +54,40 @@ int main(){
 //     newNum=newNum/10;
 // }
 // cout<<mul<<" "<<sum;
-int x= -123;
-int temp = x;
-int reverse = 0;
-        while(x!=0){
-            int digit = (x%10);
-            reverse=(reverse+digit)*10;
-            x/=10;
-        }
+// int x= -123;
+// int temp = x;
+// int reverse = 0;
+//         while(x!=0){
+//             int digit = (x%10);
+//             reverse=(reverse+digit)*10;
+//             x/=10;
+//         }
         
-           cout<<reverse;
-        
+//            cout<<reverse;
+// Decimal to Binary
+// int n;
+// cin>>n;
+// int binary = 0;
+// int place = 1;
+// while(n>0){
+//     int remainder = n%2;
+//     binary = binary+remainder*place;
+//     place = place*10;
+//     n/=2;
+// }
+// cout<<binary;
+
+// Binary to decimal
+// int binary;
+// cin>>binary;
+// int decimal = 0;
+// int base = 1;
+// while(binary>0){
+//     int remainder = binary%10;
+//     decimal = decimal+remainder*base;
+//     base = base*2;
+//     binary/=10;
+// }
+// cout<<decimal;
 return 0;
 }
