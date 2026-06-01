@@ -101,20 +101,48 @@ using namespace std;
 // }
 
 // Code to find the nCr
-int factorial(int n){
-    int fact = 1;
-    for(int i = 1; i<=n; i++){
-        fact = fact*i;
+// int factorial(int n){
+//     int fact = 1;
+//     for(int i = 1; i<=n; i++){
+//         fact = fact*i;
+//     }
+//     return fact;
+// }
+// int nCr(int n, int r){
+//     int ans = ((factorial(n)))/((factorial(r))*(factorial(n-r)));
+//     return ans;
+// }
+// int main(){
+//     int n, r;
+//     cin>>n>>r;
+//     cout<<"The nCr of n and r is : "<<nCr(n,r)<<endl;
+// int printCount(int n){
+//     for(int i = 1; i<=n; i++){
+//         cout<<i<<" ";
+//     }
+//     cout<<endl;
+// }
+// int main(){
+//     int n;
+//     cin>>n;
+//     printCount(n);
+bool isPrime(int n){
+    for(int i = 2; i<n; i++){
+        if(n%i==0){
+            // iska matlab hai ki prime number nahi kyuki divde hone k baad remainder 0 aagaya hai;
+            return 0;
+        }
     }
-    return fact;
-}
-int nCr(int n, int r){
-    int ans = ((factorial(n)))/((factorial(r))*(factorial(n-r)));
-    return ans;
+    return 1;
+
 }
 int main(){
-    int n, r;
-    cin>>n>>r;
-    cout<<"The nCr of n and r is : "<<nCr(n,r)<<endl;
+    int n;
+    cin>>n;
+    if(isPrime(n)){
+        cout<<"The given number is a prime number"<<endl;
+    }else{
+        cout<<"The given number is not a prime number"<<endl;
+    }
     return 0;
 }
